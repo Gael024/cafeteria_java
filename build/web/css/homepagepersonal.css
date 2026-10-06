@@ -1,0 +1,167 @@
+/*GENERAL*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+/*HEADER*/
+
+.cabeza {
+    display: flex;                 /* Pone logo a la izquierda y navegación a la derecha */
+    justify-content: space-between;/* Separa los elementos en extremos */
+    align-items: center;           /* Centra verticalmente logo y links */
+    padding: 10px 40px;            /* Espaciado interior similar al diseño */
+}
+
+/*LOGO*/ 
+
+.logo {
+    width: 120px;     /* Tamaño EXACTO que pediste */
+    height: auto;     
+}
+
+/*NAVEGACION*/
+
+.navegacion {
+    display: flex;       /* Coloca los enlaces en fila */
+    gap: 30px;           /* Espacio entre cada enlace */
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Estilo de los enlaces */
+
+.navegacion__enlace {
+    font-size: 25px;         /* Tamaño similar al mockup */
+    font-weight: bold;       /* Texto grueso */
+    color: #003b8f;          /* Color EXACTO que pediste */
+    text-decoration: none;   /* Quita el subrayado del enlace */
+}
+
+.navegacion__enlace:hover {
+    color: #27C8F5; /* Cambia a otro color en lugar de subrayado */
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+/* FOOTER  */
+
+.footer {
+    background-color: #003b8f;   /* black background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+}
+
+.footer_left {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.social_icons {
+    display: flex;
+    gap: 0.5rem;     /* spacing between icons */
+    margin-top: 4px;
+    align-items: center;
+}
+
+.social_icons p {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* SVG ICON SIZE */
+.social_icons svg {
+    width: 40px;
+    height: 40px;
+}
+
+.footer_left p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer_left p {
+    margin: 2px 0; /* ajusta espacio en stack  */
+}
+
+/*MAIN*/
+
+/*MAIN PRINCIPAL*/
+
+.menu {
+    text-align: center;          /* Centra el título horizontalmente */
+    margin-top: 20px;            /* Separación con el header */
+}
+
+
+/*GRID  PARA QUE SE VEAN 4  2 FILAS CON 2 COLUNAS*/
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 380px);  /* Columnas más angostas */
+    justify-content: center;                   /* Centra el grid */
+    justify-items: center;
+    gap: 40px 150px;                             /* Más junto entre columnas */
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    
+}
+
+/*TAMANO DE LAS IMAGENES*/
+
+.menu a img {
+    width: 450px;               /* Tamaño similar al mockup */
+    height: 450px;
+    object-fit: cover;          /* Recorta la imagen sin deformarla */
+    border: 1px solid #555;     /* Marco oscuro como en el wireframe */
+}
+
+
+.left:hover{
+    color: #23A3E8;
+}
+
+.right:hover{
+    color: #23A3E8;
+}

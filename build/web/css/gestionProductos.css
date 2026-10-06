@@ -1,0 +1,217 @@
+/*GENERAL*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+/*HEADER*/
+
+.cabeza {
+    display: flex;                 /* Pone logo a la izquierda y navegación a la derecha */
+    justify-content: space-between;/* Separa los elementos en extremos */
+    align-items: center;           /* Centra verticalmente logo y links */
+    padding: 10px 40px;            /* Espaciado interior similar al diseño */
+}
+
+/*LOGO*/ 
+
+.logo {
+    width: 120px;     /* Tamaño EXACTO que pediste */
+    height: auto;     
+}
+
+/*NAVEGACION*/
+
+.navegacion {
+    display: flex;       /* Coloca los enlaces en fila */
+    gap: 30px;           /* Espacio entre cada enlace */
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Estilo de los enlaces */
+
+.navegacion__enlace {
+    font-size: 25px;         /* Tamaño similar al mockup */
+    font-weight: bold;       /* Texto grueso */
+    color: #003b8f;          /* Color EXACTO que pediste */
+    text-decoration: none;   /* Quita el subrayado del enlace */
+}
+
+.navegacion__enlace:hover {
+    color: #27C8F5; /* Cambia a otro color en lugar de subrayado */
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+/* FOOTER  */
+
+.footer {
+    background-color: #003b8f;   /* black background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+}
+
+.footer_left {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.social_icons {
+    display: flex;
+    gap: 0.5rem;     /* spacing between icons */
+    margin-top: 4px;
+    align-items: center;
+}
+
+.social_icons p {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* SVG ICON SIZE */
+.social_icons svg {
+    width: 40px;
+    height: 40px;
+}
+
+.footer_left p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer_left p {
+    margin: 2px 0; /* ajusta espacio en stack  */
+}
+
+/*MAIN*/
+
+/* Contenedor general centrado */
+.tabla-contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Tabla  */
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.15);
+}
+
+/* Encabezados */
+.tabla-productos thead {
+    background: #000000;
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.tabla-productos th {
+    padding: 14px;
+    font-size: 16px;
+}
+
+/* Celdas */
+.tabla-productos td {
+    padding: 12px;
+    border-bottom: 1px solid #ececec;
+    font-size: 15px;
+}
+
+.tabla-productos tr{
+      font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Hover filas */
+.tabla-productos tbody tr:hover {
+    background: #f2f6ff;
+    transition: 0.3s;
+}
+
+/* Botón EDITAR */
+.btn-editar {
+    background: #003b8f;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-editar:hover {
+    background: #1565c0;
+}
+
+/* Botón AGREGAR PRODUCTO centrado */
+.contenedor-boton {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.btn-agregar {
+    padding: 12px 20px;
+    background: #003b8f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-agregar:hover {
+    background: #27C8F5;
+}
+

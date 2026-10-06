@@ -1,0 +1,208 @@
+/*GENERAL*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+/*HEADER*/
+
+.cabeza {
+    display: flex;                 /* Pone logo a la izquierda y navegación a la derecha */
+    justify-content: space-between;/* Separa los elementos en extremos */
+    align-items: center;           /* Centra verticalmente logo y links */
+    padding: 10px 40px;            /* Espaciado interior similar al diseño */
+}
+
+/*LOGO*/ 
+
+.logo {
+    width: 120px;     /* Tamaño DE LOGO */
+    height: auto;     
+}
+
+/*NAVEGACION*/
+
+.navegacion {
+    display: flex;       /* Coloca los enlaces en fila */
+    gap: 30px;           /* Espacio entre cada enlace */
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Estilo de los enlaces */
+
+.navegacion__enlace {
+    font-size: 25px;         /* Tamaño similar al mockup */
+    font-weight: bold;       /* Texto grueso */
+    color: #003b8f;          /* Color  BUAPO*/
+    text-decoration: none;   /* REMOVE el subrayado del enlace */
+}
+
+.navegacion__enlace:hover {
+    color: #27C8F5; /* Cambia a otro color en lugar de subrayado */
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+h1{
+    margin: 0px 0px;
+}
+
+.carrito{
+    text-align: center;
+}
+
+.carrito_imagen{
+    width: 100px;     /* Tamaño EXACTO que pediste */
+    height: auto;
+}
+
+/* FOOTER  */
+
+.footer {
+    background-color: #003b8f;   /* black background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+}
+
+.footer_left {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.social_icons {
+    display: flex;
+    gap: 0.5rem;     /* spacing between icons */
+    margin-top: 4px;
+    align-items: center;
+}
+
+.social_icons p {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* SVG ICON SIZE */
+.social_icons svg {
+    width: 40px;
+    height: 40px;
+}
+
+.footer_left p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer_left p {
+    margin: 2px 0; /* ajusta espacio en stack  */
+}
+
+
+/*TARJETA*/
+
+/* CONTENEDOR GENERAL */
+.seguimiento-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* TARJETA */
+.seguimiento-card {
+    background: #ffffff;
+    width: 420px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* TÍTULOS E INFORMACIÓN */
+.seguimiento-titulo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.seguimiento-item {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+.seguimiento-total {
+    font-size: 19px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1f7a1f;
+}
+
+.seguimiento-estado,
+.seguimiento-fecha {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* BOTÓN CENTRADO */
+.seguimiento-form {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.btn-actualizar {
+    background: #174ea6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 70%;
+    transition: 0.3s;
+}
+
+.btn-actualizar:hover {
+    background: #103c82;
+}
+
+

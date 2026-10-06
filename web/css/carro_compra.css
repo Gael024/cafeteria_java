@@ -1,0 +1,330 @@
+/*GENERAL*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+/*HEADER*/
+
+.cabeza {
+    display: flex;                 /* Pone logo a la izquierda y navegación a la derecha */
+    justify-content: space-between;/* Separa los elementos en extremos */
+    align-items: center;           /* Centra verticalmente logo y links */
+    padding: 10px 40px;            /* Espaciado interior similar al diseño */
+}
+
+/*LOGO*/ 
+
+.logo {
+    width: 120px;     /* Tamaño DE LOGO */
+    height: auto;     
+}
+
+/*NAVEGACION*/
+
+.navegacion {
+    display: flex;       /* Coloca los enlaces en fila */
+    gap: 30px;           /* Espacio entre cada enlace */
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Estilo de los enlaces */
+
+.navegacion__enlace {
+    font-size: 25px;         /* Tamaño similar al mockup */
+    font-weight: bold;       /* Texto grueso */
+    color: #003b8f;          /* Color  BUAPO*/
+    text-decoration: none;   /* REMOVE el subrayado del enlace */
+}
+
+.navegacion__enlace:hover {
+    color: #27C8F5; /* Cambia a otro color en lugar de subrayado */
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+h1{
+    margin: 0px 0px;
+}
+
+.carrito{
+    text-align: center;
+}
+
+.carrito_imagen{
+    width: 100px;     /* Tamaño EXACTO que pediste */
+    height: auto;
+}
+
+/* FOOTER  */
+
+.footer {
+    background-color: #003b8f;   /* black background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+}
+
+.footer_left {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.social_icons {
+    display: flex;
+    gap: 0.5rem;     /* spacing between icons */
+    margin-top: 4px;
+    align-items: center;
+}
+
+.social_icons p {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* SVG ICON SIZE */
+.social_icons svg {
+    width: 40px;
+    height: 40px;
+}
+
+.footer_left p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer_left p {
+    margin: 2px 0; /* ajusta espacio en stack  */
+}
+
+
+
+/*MAIN*/
+/* ======== CONTENEDOR PRINCIPAL ======== */
+.carrito-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ======== LISTA DE PRODUCTOS ======== */
+.productos-lista {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ======== TARJETAS DE PRODUCTO ======== */
+.producto-card {
+    display: flex;
+    align-items: center;
+    background: #003b8f;  /* COLOR BUAP */
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.producto-card:hover {
+    background: #27C8F5;
+}
+
+/* Imagen del producto */
+.producto-img {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 5px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+/* Información del producto */
+.producto-info {
+    flex: 1;
+    font-family: "Science Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+}
+
+.producto-info p {
+    margin: 3px 0;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+    background: white;
+    border: 2px solid black;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-eliminar:hover {
+    background: #e0e0e0;
+}
+
+/* ======== PANEL DERECHO (TOTAL) ======== */
+.panel-total {
+    flex: 1;
+    background: #000000; /* gris oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: max-content;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.panel-total:hover{
+     background: #0D0D54;
+}
+
+.panel-total h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.panel-total p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botón Finalizar compra */
+.btn-finalizar {
+    display: block;
+    width: 100%;
+    background: white;
+    border: 2px solid black;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-finalizar:hover {
+    background: #e0e0e0;
+}
+
+
+/*MODELES*/
+
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+
+    position: relative;     /* ES LO DE LA X */
+    animation: entrada 0.3s ease-out;
+}
+
+@keyframes entrada {
+    0%   {transform: scale(0.4); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
+
+.btn-modal {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #242424;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.btn-modal:hover {
+    background: #0D0D54;
+}
+
+
+
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-modal:hover {
+    color: #ff4444;
+}
+
+

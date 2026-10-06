@@ -1,0 +1,12 @@
+
+/* 
+    Created on : 21 nov 2025, 11:50:42 a.m.
+    Author     : Erwin
+*/
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    padding: 20px;
+}
